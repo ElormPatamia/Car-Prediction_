@@ -67,7 +67,7 @@ with st.form("prediction_form"):
     col1, col2 = st.columns(2)
     
     with col1:
-        prod_year = st.number_input("Production Year", min_value=1990, max_value=2024, value=2018, step=1)
+        prod_year = st.number_input("Production Year", min_value=1990, max_value=2026, value=2018, step=1)
         levy = st.number_input("Levy (tax)", min_value=0.0, value=100.0, step=50.0)
         mileage = st.number_input("Mileage (km)", min_value=0, value=50000, step=10000)
         cylinders = st.selectbox("Cylinders", [2, 3, 4, 5, 6, 8, 10, 12], index=2)
@@ -125,4 +125,4 @@ if submitted:
         st.stop()
     
     # Optional: show a note about confidence
-    st.caption("Prediction is based on a Random Forest model trained on 19,237 cars. Actual market prices may vary.")
+    st.caption("Prediction is based on a Random Forest model trained on 13,418 cars. Actual market prices may vary.")
