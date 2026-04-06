@@ -60,7 +60,7 @@ def apply_feature_engineering(df):
 # 4. Streamlit UI
 # ------------------------------------------------------------
 st.set_page_config(page_title="Car Price Predictor", layout="centered")
-st.title("🚗 Car Price Prediction")
+st.title("Car Price Prediction")
 st.markdown("Enter the car details below to get an estimated price.")
 
 with st.form("prediction_form"):
